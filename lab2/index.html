@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Table and Form</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="name">ПІБ (ТТТТТТТТ Т.Т.):</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="group">Група (ТТ-ЧЧ):</label>
+        <input type="text" id="group" name="group">
+        <br>
+        <label for="phone">Телефон (ЧЧЧ-ЧЧЧ-ЧЧ-ЧЧ):</label>
+        <input type="tel" id="phone" name="phone">
+        <br>
+        <label for="email">Email (тттттттт@ттттт.com):</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="address">Адреса (м. ТТТТТТ):</label>
+        <input type="text" id="address" name="address">
+        <br>
+        <button type="button" id="submitBtn"s>Відправити</button>
+    </form>
+
+    <div id="dataContainer"></div>
+
+    <label id="color" for="color">Колір клітинки:</label>
+    <input type="color" id="color" name="color">
+
+    <table id="myTable">
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
