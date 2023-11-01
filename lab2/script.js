@@ -34,20 +34,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function setSelectedColor(event) {
         const cell = event.target;
-        const colorInput = document.getElementById('color');
-        cell.style.backgroundColor = colorInput.value;
+        const colorInput = document.getElementById('color_input').value;
+        console.log(colorInput)
+        cell.style.backgroundColor = colorInput;
     }
 
     function setRowColor(event) {
         const cell = event.target;
         const row = cell.parentNode;
         const cells = row.querySelectorAll('td');
+        const colorInput = document.getElementById('color_input');
         let cellId = parseInt(cell.textContent)
         while(cellId > 6) {
             cellId -= 6
         }
         for (let i = cellId - 1; i <= cells.length; i += 2) {
-            cells[i].style.backgroundColor = cell.style.backgroundColor;
+            cells[i].style.backgroundColor = colorInput.value;
         }
     }
 
